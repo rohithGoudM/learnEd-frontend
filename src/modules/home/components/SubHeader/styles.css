@@ -1,0 +1,25 @@
+.subHeader_tab{
+        height: 40px;
+        background: #fef6f6;
+        width: 80%;
+        margin: 0px;
+        box-shadow: 1px -5px 8px 0px #f2a4a0;
+        border-radius: 8px;
+        align-items: center;
+        margin-bottom: -30px;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        line-height: 40px;
+        font-size: 13px;
+    text-transform: uppercase;
+    color: #666;
+    cursor: pointer;
+
+    
+}
+.subHeader_tab_active{
+        color: #c61b2e;
+    font-weight: bold;
+    box-shadow: 1px -5px 8px 0px #c61b2e;
+}

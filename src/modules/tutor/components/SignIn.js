@@ -1,18 +1,32 @@
 import React, {useState,useEffect} from 'react';
 import {connect} from 'react-redux';
 
+import learnEdtheme from '../../../theme';
 
 
 const SignIn = ()=>{
+	const styles = {
+		form :{
+			backgroundColor: learnEdtheme.brandSecondry,
+			borderRadius: '4px',
+			padding: '20px 20px 40px',
+			marginTop: '10%',
+			marginLeft: '10%',
+		},
+		loginText:{
+			color: '#fff',
+			marginBottom: '20px'
+		}
+	} 
 	return(
 		<div>
-			<form className="my-auto p-3">
+			<form   style={styles.form}>
 			  <div class="form-group">
-			    <input disabled type="email" class="form-control" id="exampleFormControlInput1" placeholder="Education is the route to betterment of mankind."/>
+				 <div style = {styles.loginText}><h3>Login!</h3></div> 
 			  </div>
 				<div className="col-md-10 offset-md-1">
 					<div class="form-group text-center">
-				    <button className="btn btn-primary px-5" >Sign In with Google</button>
+				    <button className="btn btn-primary px-5" style = {{background: 'rgb(26 75 128)'}} >Sign In with Google</button>
 					</div>
 					<div class="form-group text-center">
 				    <p className="lead text-muted" >Or</p>
