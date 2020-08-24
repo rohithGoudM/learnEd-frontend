@@ -25,6 +25,10 @@ const styles = {
     marginLeft: '10px',
     fontWeight: 400,
     fontSize: '15px',
+    },
+    roleText:{
+        fontSize: '13px',
+        lineHeight: '20px'
     }
 }
 
@@ -32,6 +36,18 @@ const Header = (props)=>{
 	return (
         
         <div  style={styles.headerStyle}>
+            <div className = "row" style = {{height: 0, justifyContent:'center'}}>
+                <span onClick={()=>props.changeRole(roles.tutor)}>
+                       <Link to ='/tutor' style = {styles.roleText}>I am a Tutor </Link>
+                    </span> 
+                    <div   style={{marginTop: '-7px'}}>
+                   <Switch checked = {props.activeRole == roles.student} 
+                 
+                //    onChange={() => props.changeRole(props.activeRole == roles.student ? roles.tutor : roles.student)}
+                   /></div>
+                    <span onClick={()=>props.changeRole(roles.student)}>
+                        <Link to ='/student' style = {styles.roleText}>I am a Student</Link> 
+                    </span></div>
             <div className="row">
                 <div className="col-md-2 ">
                     <div >
@@ -40,27 +56,26 @@ const Header = (props)=>{
                     </div>
 
                 </div>
-                <div className="col-md-6" style = {{height: '40px',marginTop: '40px'}}>
+                <div className="col-md-8" style = {{height: '40px',marginTop: '40px'}}>
                     <SubHeader activeRoute={props.activeRoute} changeRoute={props.changeRoute} routes={props.routes} />
                 </div>
-                <div className="col-md-4  row" style={{ justifyContent: 'center', lineHeight:'50px' }}>
-                    <div style={{ marginRight: "50px" , marginTop : '30px'}}> 
+                <div className="col-md-2  row" style={{ justifyContent: 'center', lineHeight:'80px' }}>
+                    <div > 
                         <Button variant="contained" color="primary">
                             LOGIN
                         </Button>  
                     </div>
                     <div>
-                        <div>
-                   <span onClick={()=>props.changeRole(roles.tutor)}>
-                       <Link to ='/tutor'>  Tutor Portal  </Link>
-                    </span> 
-                   <Switch checked = {props.activeRole == roles.student} 
-                //    onChange={() => props.changeRole(props.activeRole == roles.student ? roles.tutor : roles.student)}
-                   />
-                    <span onClick={()=>props.changeRole(roles.student)}>
-                        <Link to ='/student'> Student Portal</Link> 
-                    </span>
-                    </div>
+                        {/* <div>
+                            <span onClick={() => props.changeRole(roles.tutor)}>
+                                <Link to='/tutor'>  Tutor Portal  </Link>
+                            </span>
+                            <Switch checked={props.activeRole == roles.student}
+                            />
+                            <span onClick={() => props.changeRole(roles.student)}>
+                                <Link to='/student'> Student Portal</Link>
+                            </span>
+                        </div> */}
                     </div>
                 </div>
             </div>
