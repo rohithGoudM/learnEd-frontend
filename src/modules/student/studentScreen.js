@@ -1,20 +1,18 @@
 import React, {useState,useEffect} from 'react';
 import {connect} from 'react-redux';
 
-import {TutorForm, CheckList, SignIn} from './components';
-import Header from '../home/components/Header/Header';
-import SubHeader from '../home/components/Header/SubHeader';
+
 import learnEdtheme from '../../theme';
 import './styles.css';
 import LoginSection from './components/LoginSection';
-import tutorImage from '../../../public/tutor1.jpg';
-import BannerSection from './components/BannerSection';
+import studentImage from '../../../public/student1.jpg';
 import Features from './components/Features';
-const TutorScreen = ()=>{
+import BannerSection from '../tutor/components/BannerSection';
+const StudentScreen = ()=>{
 	return (
 		<div >
 			<div>
-				<div className="section text-center" style={{ backgroundImage: 'url(' + tutorImage + ')', backgroundSize: 'cover' }}>
+				<div className="section text-center" style={{ backgroundImage: 'url(' + studentImage + ')', backgroundSize: 'cover' }}>
 					<div style={{ height: '100%', width: '100%', backgroundColor: 'rgb(251 230 229 / 59%)' }}>
 						<BannerSection />
 					</div>
@@ -33,4 +31,4 @@ const TutorScreen = ()=>{
 	)
 }
 
-export default TutorScreen;
+export default StudentScreen;
