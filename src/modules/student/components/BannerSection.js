@@ -3,7 +3,7 @@ import TutorForm from './TutorForm';
  
 
 
-export default class LoginSection extends React.Component{
+export default class BannerSection extends React.Component{
     state = {
         activeRouteIndex:1
     }
@@ -27,4 +27,5 @@ export default class LoginSection extends React.Component{
     )
     }
 }
+
 

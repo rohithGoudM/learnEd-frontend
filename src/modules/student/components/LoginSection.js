@@ -1,4 +1,10 @@
 import React, {useState,useEffect} from 'react';
+import {connect} from 'react-redux';
+
+
+import learnEdtheme from '../../../theme';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import SignIn from './SignIn';
 import TutorForm from './TutorForm';
  
 
