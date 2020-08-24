@@ -26,7 +26,7 @@ export default class SignUpSection  extends React.Component{
                     </div>
 
 					<div className="col-md-5">
-						<TutorForm/>
+						{/* <TutorForm/> */}
 					</div>
 				</div>
     )

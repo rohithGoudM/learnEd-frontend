@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import learnEdtheme from '../../../theme';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import SignIn from './SignIn';
+import TutorForm from './TutorForm';
  
 
 
@@ -16,14 +17,15 @@ export default class LoginSection extends React.Component{
     render(){
      
 	return (
-		<div className="container pt-3">
+		<div className=" pt-3">
 			<div className="">
                 <div className = "row">
-                    <div className="col-md-5">
-                    <SignIn/>
-                    </div>
                     <div className="col-md-7">
-                       <h1 style = {{marginTop: '20%', color: 'black'}}>Education is the route to betterment of mankind !</h1>
+
+                    </div>
+                    <div className="col-md-5">
+                    <TutorForm/>
+
                     </div>
                 </div>
             </div>

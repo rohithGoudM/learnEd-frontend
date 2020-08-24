@@ -69,8 +69,7 @@ render(){
 const styles = {
     headerStyle :{
     // backgroundColor:learnEdtheme.brandPrimary,
-    backgroundImage: "linear-gradient(to bottom, #c61b2e, #f2a4a0)",
-    height: 60,
+ 
     justifyContent: 'center'
 
     
