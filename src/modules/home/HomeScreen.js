@@ -7,7 +7,7 @@ import SubHeader from './components/Header/SubHeader';
 import learnEdtheme from '../../theme';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import {unauth_header_routes_student, unauth_header_routes_teacher} from './components/Header/headerRoutes';
-import TutorScreen from '../tutor/tutorScreen';
+import TutorScreen from '../tutor/tutorScreen/index';
 import AboutmeScreen from '../tutor/aboutme';
 import StudentScreen from '../student/studentScreen';
 import { roles } from '../../config/constants';
