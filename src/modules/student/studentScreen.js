@@ -7,7 +7,8 @@ import './styles.css';
 import LoginSection from './components/LoginSection';
 import studentImage from '../../../public/student1.jpg';
 import Features from './components/Features';
-import BannerSection from '../tutor/components/BannerSection';
+import BannerSection from '../tutor/tutorScreen/components/BannerSection';
+
 const StudentScreen = ()=>{
 	return (
 		<div >

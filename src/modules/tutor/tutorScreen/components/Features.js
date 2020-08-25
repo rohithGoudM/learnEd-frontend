@@ -2,13 +2,13 @@ import React, {useState,useEffect} from 'react';
 import {connect} from 'react-redux';
 
 
-import learnEdtheme from '../../../theme';
+import learnEdtheme from '../../../../theme';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import SignIn from './SignIn';
 import TutorForm from './TutorForm';
  import '../styles.css';
  import Paper from '@material-ui/core/Paper';
-import aboutME from '../../../../public/aboutMe.png';
+import aboutME from '../../../../../public/aboutMe.png';
 
 export default class Features extends React.Component{
     state = {

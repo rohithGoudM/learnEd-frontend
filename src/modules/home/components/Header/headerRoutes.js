@@ -17,6 +17,10 @@ const unauth_header_routes_teacher= [
         title: "ABOUT US", 
         route:"about_us",
         index: 4
+    },{
+        title: "ABOUT ME", 
+        route:"/about_me",
+        index: 5
     }
 
 ]

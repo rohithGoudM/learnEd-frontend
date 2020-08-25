@@ -2,14 +2,15 @@ import React, {useState,useEffect} from 'react';
 import {connect} from 'react-redux';
 
 import {TutorForm, CheckList, SignIn} from './components';
-import Header from '../home/components/Header/Header';
-import SubHeader from '../home/components/Header/SubHeader';
-import learnEdtheme from '../../theme';
+import Header from '../../home/components/Header/Header';
+import SubHeader from '../../home/components/Header/SubHeader';
+import learnEdtheme from '../../../theme';
 import './styles.css';
 import LoginSection from './components/LoginSection';
-import tutorImage from '../../../public/tutor1.jpg';
+import tutorImage from '../../../../public/tutor1.jpg';
 import BannerSection from './components/BannerSection';
 import Features from './components/Features';
+
 const TutorScreen = ()=>{
 	return (
 		<div >

@@ -8,6 +8,7 @@ import learnEdtheme from '../../theme';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import {unauth_header_routes_student, unauth_header_routes_teacher} from './components/Header/headerRoutes';
 import TutorScreen from '../tutor/tutorScreen';
+import AboutmeScreen from '../tutor/aboutme';
 import StudentScreen from '../student/studentScreen';
 import { roles } from '../../config/constants';
  
@@ -32,6 +33,7 @@ changeRole=(value)=>{
                     changeRole={this.changeRole} />
                 <Route path={'/tutor'} component={TutorScreen} />
                 <Route path={'/student'} component={StudentScreen} />
+                <Route path={'/about_me'} component={AboutmeScreen} />
             </div>
     )
     }

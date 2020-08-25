@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import {connect} from 'react-redux';
-import learnEdtheme from '../../../theme';
+import learnEdtheme from '../../../../theme';
 
 import initialState from '../state';
 const styles = {form :{
@@ -30,6 +30,7 @@ const TutorForm = ()=>{
   		&& tutorInformation.description){
   		event.preventDefault();  	
 	  	fetch('http://13.126.158.81:8080/postDetail',{
+	  		"Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE1OTgzNDczMzksImlhdCI6MTU5ODMyOTMzOX0.hhX2pZaDjy23gd1KmBmrH5tL8IyT6GUvGSaie-WEt2Yr1yAphmYbXA2B1xtzP_Q0c_P0ODbi13JreDeYFswZQA",
 	      method:"post",
 	      headers:{
 	        "Content-Type": "application/json"

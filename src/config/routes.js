@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import comingSoonScreen from '../modules/comingSoon/comingSoonScreen';
-import tutorScreen from '../modules/tutor/tutorScreen';
+import TutorScreen from '../modules/tutor/tutorScreen/index';
 import HomeScreen from '../modules/home/HomeScreen';
 import { createMuiTheme } from '@material-ui/core/styles';
 import learnEdtheme from '../theme';

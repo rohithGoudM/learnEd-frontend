@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react';
 import {connect} from 'react-redux';
 import Button from '@material-ui/core/Button';
 
-import learnEdtheme from '../../../theme';
+import learnEdtheme from '../../../../theme';
 
 
 const SignIn = ()=>{
