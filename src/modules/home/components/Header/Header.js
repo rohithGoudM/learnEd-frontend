@@ -9,7 +9,7 @@ import { roles } from '../../../../config/constants';
 
 const styles = {
     headerStyle :{
-    backgroundColor:learnEdtheme.brandHeader,
+    backgroundColor:learnEdtheme.headerBackground,
     height: '80px',
     padding: "0px 20px"
     },

@@ -28,7 +28,7 @@ changeRole=(value)=>{
     render(){
         var routes = this.state.activeRole == roles.student ? unauth_header_routes_student : unauth_header_routes_teacher
         return (
-            <div className="" style={{ backgroundColor: learnEdtheme.backgroundBase }}>
+            <div className="" style={{ backgroundColor: '#FFFAF0' }}>
                 <Header activeRoute={this.state.activeRouteIndex} changeRoute={this.changeRoute} routes={routes} activeRole={this.state.activeRole}
                     changeRole={this.changeRole} />
                 <Route path={'/tutor'} component={TutorScreen} />
