@@ -23,7 +23,16 @@ const unauth_header_routes_teacher= [
         index: 5
     }
 
+];
+
+const authorized_teacher_header_routes=[
+    {
+        title: "ABOUT ME",
+        route: "/about_me",
+        index: 1
+    }
 ]
+
 const unauth_header_routes_student= [
 
     {
@@ -47,4 +56,4 @@ const unauth_header_routes_student= [
 
 ]
 
-export  {unauth_header_routes_teacher, unauth_header_routes_student};
+export  {unauth_header_routes_teacher, authorized_teacher_header_routes, unauth_header_routes_student};
